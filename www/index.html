@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, width=device-width, viewport-fit=cover"
+        />
+        <link rel="stylesheet" href="lib/ionic/css/ionic.bundle.css" />
+        <link rel="stylesheet" href="lib/animate/animate.min.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <ion-app>
+            <ion-tabs>
+                <ion-tab tab="tank">
+                    <ion-header translucent>
+                        <ion-toolbar color="primary">
+                            <ion-title>Tank</ion-title>
+                        </ion-toolbar>
+                    </ion-header>
+
+                    <ion-content fullscreen class="ion-padding"></ion-content>
+                </ion-tab>
+
+                <ion-tab tab="motor">
+                    <ion-header translucent>
+                        <ion-toolbar color="primary">
+                            <ion-title>Motor</ion-title>
+                        </ion-toolbar>
+                    </ion-header>
+
+                    <ion-content fullscreen class="ion-padding"></ion-content>
+                </ion-tab>
+
+                <ion-tab tab="flow">
+                    <ion-header translucent>
+                        <ion-toolbar color="primary">
+                            <ion-title>Flow</ion-title>
+                        </ion-toolbar>
+                    </ion-header>
+
+                    <ion-content fullscreen class="ion-padding"></ion-content>
+                </ion-tab>
+
+                <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="tank">
+                        <ion-label>Tank</ion-label>
+                        <ion-icon name="speedometer"></ion-icon>
+                    </ion-tab-button>
+                    <ion-tab-button tab="motor">
+                        <ion-label>Motor</ion-label>
+                        <ion-icon name="cog"></ion-icon>
+                    </ion-tab-button>
+                    <ion-tab-button tab="flow">
+                        <ion-label>Flow</ion-label>
+                        <ion-icon name="water"></ion-icon>
+                    </ion-tab-button>
+                </ion-tab-bar>
+            </ion-tabs>
+        </ion-app>
+
+        <script src="cordova.js"></script>
+        <script type="module" src="lib/ionic/dist/ionic/ionic.esm.js"></script>
+        <script nomodule src="lib/ionic/dist/ionic/ionic.js"></script>
+        <script src="lib/fluidMeter/fluidMeter.js"></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

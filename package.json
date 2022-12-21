@@ -1,0 +1,31 @@
+{
+    "name": "pk.com.fyp.watermonitoring",
+    "displayName": "Water Monitoring",
+    "version": "1.0.0",
+    "description": "Water Monitoring System",
+    "main": "index.js",
+    "scripts": {
+        "start": "cordova run --target c6518cf7",
+        "build": "cordova build android"
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "IoT",
+        "Monitoring System"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "cordova-android": "^10.1.2",
+        "cordova-plugin-splashscreen": "^6.0.2",
+        "cordova-plugin-statusbar": "^3.0.0"
+    },
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-splashscreen": {}
+        }
+    }
+}
