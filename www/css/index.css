@@ -1,3 +1,7 @@
 :root {
     --ion-safe-area-top: 22px;
 }
+
+#fluid-meter {
+    margin-top: 50%;
+}
