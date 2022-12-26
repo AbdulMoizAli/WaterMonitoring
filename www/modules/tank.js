@@ -4,7 +4,10 @@ const tankLevelMapping = {
     3: 100,
 };
 
-export default async function configureTank(latestState) {
+export default function configureTank(latestState) {
+    $('ion-tab[tab="tank"] ion-content ion-spinner').remove();
+    $('ion-tab[tab="tank"] ion-content #fluid-meter').hide();
+
     const fm = new FluidMeter();
 
     fm.init({
@@ -34,4 +37,6 @@ export default async function configureTank(latestState) {
             },
         },
     });
+
+    $('ion-tab[tab="tank"] ion-content #fluid-meter').show();
 }

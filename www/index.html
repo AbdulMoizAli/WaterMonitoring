@@ -21,7 +21,26 @@
                     </ion-header>
 
                     <ion-content fullscreen class="ion-padding">
-                        <div id="fluid-meter" class="ion-text-center"></div>
+                        <div id="tank-content-container">
+                            <div
+                                class="ion-text-center animate__animated animate__fadeInDown"
+                            >
+                                <ion-chip color="primary"
+                                    ><ion-label
+                                        >Current Level</ion-label
+                                    ></ion-chip
+                                >
+                            </div>
+                            <div
+                                id="fluid-meter"
+                                class="ion-text-center animate__animated animate__fadeIn"
+                            >
+                                <ion-spinner
+                                    name="crescent"
+                                    color="primary"
+                                ></ion-spinner>
+                            </div>
+                        </div>
                     </ion-content>
                 </ion-tab>
 
