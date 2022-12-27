@@ -21,14 +21,12 @@
                     </ion-header>
 
                     <ion-content fullscreen class="ion-padding">
-                        <div id="tank-content-container">
+                        <div class="content-container">
                             <div
                                 class="ion-text-center animate__animated animate__fadeInDown"
                             >
                                 <ion-chip color="primary"
-                                    ><ion-label
-                                        >Current Level</ion-label
-                                    ></ion-chip
+                                    ><ion-label>Tank Level</ion-label></ion-chip
                                 >
                             </div>
                             <div
@@ -51,7 +49,43 @@
                         </ion-toolbar>
                     </ion-header>
 
-                    <ion-content fullscreen class="ion-padding"></ion-content>
+                    <ion-content fullscreen class="ion-padding">
+                        <div class="content-container">
+                            <div
+                                class="ion-text-center animate__animated animate__fadeInDown"
+                            >
+                                <ion-chip color="primary"
+                                    ><ion-label
+                                        >Motor State</ion-label
+                                    ></ion-chip
+                                >
+                            </div>
+                            <div
+                                style="margin-top: 10%; margin-bottom: 10%"
+                                class="ion-text-center animate__animated animate__fadeIn"
+                            >
+                                <img
+                                    src="img/7220731.png"
+                                    alt="Water Pump"
+                                    width="200"
+                                    height="200"
+                                />
+                            </div>
+                            <div
+                                class="ion-text-center animate__animated animate__fadeInUp"
+                                id="motor-state-container"
+                            >
+                                <ion-spinner
+                                    name="crescent"
+                                    color="primary"
+                                ></ion-spinner>
+
+                                <ion-chip style="display: none"
+                                    ><ion-label></ion-label
+                                ></ion-chip>
+                            </div>
+                        </div>
+                    </ion-content>
                 </ion-tab>
 
                 <ion-tab tab="flow">
@@ -61,7 +95,41 @@
                         </ion-toolbar>
                     </ion-header>
 
-                    <ion-content fullscreen class="ion-padding"></ion-content>
+                    <ion-content fullscreen class="ion-padding">
+                        <div class="content-container">
+                            <div
+                                class="ion-text-center animate__animated animate__fadeInDown"
+                            >
+                                <ion-chip color="primary"
+                                    ><ion-label>Water Flow</ion-label></ion-chip
+                                >
+                            </div>
+                            <div
+                                style="margin-top: 10%; margin-bottom: 10%"
+                                class="ion-text-center animate__animated animate__fadeIn"
+                            >
+                                <img
+                                    src="img/7220732.png"
+                                    alt="Flow Meter"
+                                    width="200"
+                                    height="200"
+                                />
+                            </div>
+                            <div
+                                class="ion-text-center animate__animated animate__fadeInUp"
+                                id="flow-state-container"
+                            >
+                                <ion-spinner
+                                    name="crescent"
+                                    color="primary"
+                                ></ion-spinner>
+
+                                <ion-chip style="display: none"
+                                    ><ion-label></ion-label
+                                ></ion-chip>
+                            </div>
+                        </div>
+                    </ion-content>
                 </ion-tab>
 
                 <ion-tab-bar slot="bottom">

@@ -2,7 +2,7 @@
     --ion-safe-area-top: 22px;
 }
 
-#tank-content-container {
+.content-container {
     margin-top: 50%;
 }
 
@@ -14,12 +14,16 @@ ion-spinner {
     transform: scale(3);
 }
 
-ion-tab[tab='tank'] ion-content ion-chip {
+ion-chip {
     width: 172px;
     height: 50px;
 }
 
-ion-tab[tab='tank'] ion-content ion-chip ion-label {
+ion-chip ion-label {
     font-size: 2em;
     flex-grow: 1;
+}
+
+.server-unavailable {
+    margin-top: 50%;
 }

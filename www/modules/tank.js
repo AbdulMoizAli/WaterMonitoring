@@ -4,7 +4,7 @@ const tankLevelMapping = {
     3: 100,
 };
 
-export default function configureTank(latestState) {
+export default function configureTank(latestState, eventSource) {
     $('ion-tab[tab="tank"] ion-content ion-spinner').remove();
     $('ion-tab[tab="tank"] ion-content #fluid-meter').hide();
 
@@ -39,4 +39,13 @@ export default function configureTank(latestState) {
     });
 
     $('ion-tab[tab="tank"] ion-content #fluid-meter').show();
+
+    eventSource.addEventListener(
+        'post',
+        function (e) {
+            const level = JSON.parse(e.data).data.tankLevel;
+            fm.setPercentage(tankLevelMapping[level]);
+        },
+        false
+    );
 }

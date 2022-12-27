@@ -16,4 +16,8 @@ async function httpGet(uri) {
     }
 }
 
-export { httpGet };
+function getEventSource() {
+    return new EventSource(`${API_URL}realtime?apikey=${API_KEY}`);
+}
+
+export { httpGet, getEventSource };
